@@ -1,0 +1,37 @@
+sc_node_not_relation->concept_organ_of_vision;;
+sc_node_not_relation->concept_man;;
+sc_node_not_relation->concept_eye;;
+sc_node_not_relation->concept_ligth;;
+sc_node_not_relation->concept_eyeball;;
+sc_node_not_relation->concept_supportive_apparatus;;
+
+concept_eye=>nrel_main_idtf:[concept_eye](*<-lang_en;;*);;
+concept_eye=>nrel_main_idtf:[Глаз](*<-lang_ru;;*);;
+
+sc_definition -> ...(*
+    ->rrel_key_sc_element:concept_eye;;
+
+    <=nrel_sc_text_translation: ...(*->rrel_example:[Глаз - орган зрения, воспринимающий свет](*<-lang_ru;;*);;*);;
+
+    =>nrel_main_idtf:[Опр.(глаз)](*<-lang_ru;;*);;
+
+    =>nrel_using_constants:{
+        concept_organ_of_vision;
+        concept_man;
+        concept_ligth
+    };;
+*);;
+
+sc_statement -> ...(*
+    ->rrel_key_sc_element:concept_eye;;
+
+    =>nrel_sc_text_traslation: ...(*->rrel_example:["Глаз состоит из глазного яблока и вспомогательного аппарата — век, слезных органов и мышц глазного яблока."];;*);;
+
+    =>nrel_main_idtf:[Утв.(Строение глаза)](*<-lang_ru;;*);;
+
+    =>nrel_using_constants:{
+        concept_eyeball;
+        concept_supportive_apparatus
+    
+    };;
+*);;
